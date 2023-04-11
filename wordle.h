@@ -21,5 +21,10 @@ std::set<std::string> wordle(
     const std::string& in,
     const std::string& floating,
     const std::set<std::string>& dict);
+void helper(
+    const std::string& in,
+    const std::string& floating,
+    std::set<std::string>& valid_words);
 
+int get_next_index(const std::string& in, char letter);
 #endif
